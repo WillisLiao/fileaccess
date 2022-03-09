@@ -59,16 +59,17 @@ print(data_into_list[6].split()[0])
 g=-1
 for i in range(1, 30):
     with open("{}{}.txt".format(newDir, i), "w") as file:
-        while True:
-            g+=1
-            if str(i) in data_into_list[g].split()[0]:
+        file.write('fk u')
+       # while True:
+          #  g+=1
+          #  if str(i) in data_into_list[g].split()[0]:
 
-                file.write("{}".format(data_into_list[g].split()[1]))
-                pass
+           #     file.write("{}".format(data_into_list[g].split()[1]))
+           #     pass
             
 
-            elif g ==3317:
-                break
+           # elif g ==3317:
+           #     break
 
                 
                 
