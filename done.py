@@ -4,7 +4,7 @@ newDir = 'char'
 j= 0
 for i in range(1, 20, 5):
     j += 5
-    foldName = "{}{} - {:02d}".format(newDir, i, j)
+    foldName = "{}{:02d} - {:02d}".format(newDir, i, j)
     if os.path.exists(foldName):
         print("{} fold is existed!".format(foldName))
     else:
@@ -57,19 +57,25 @@ for i in range(len(name)):
             pass
 print(data_into_list[6].split()[0])
 g=-1
+address = os.getcwd()
+for i in range():
+    with open("{}//char{}-{}//{}{:02d}.txt".format(address, newDir, i), "w") as file:
+    
 for i in range(1, 30):
-    with open("{}{}.txt".format(newDir, i), "w") as file:
-        file.write('fk u')
-       # while True:
-          #  g+=1
-          #  if str(i) in data_into_list[g].split()[0]:
+    with open("{}//char{}-{}//{}{:02d}.txt".format(address, newDir, i), "w") as file:
+        
+        while True:
+            g+=1
+            if str(i) in data_into_list[g].split()[0]:
 
-           #     file.write("{}".format(data_into_list[g].split()[1]))
-           #     pass
+                file.write("{}".format(data_into_list[g].split()[1]))
+                
             
 
-           # elif g ==3317:
-           #     break
+            elif g ==3317:
+                break
+            else:
+                pass
 
                 
                 
